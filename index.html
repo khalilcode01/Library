@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./myStyles.css">
+    <script src="./myScript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="head-container">
+                Library
+            </div>
+        </header>
+        <main class="main">
+            <button class="add-book">+ Add book</button>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="title-card size">"life"</div>
+                    <div class="author-card size">khalil Al-sadi</div>
+                    <div class="pages-card size">1200</div>
+                    <button class="status card-button">Not read</button>
+                    <button class="remove card-button">Remove</button>
+                </div>
+            </div>
+        </main>
+        <div class="open">
+            <div class="submit-card">
+                <div class="head-card">
+                    Add new book
+                </div>
+                <form method="post">
+                    <div class="title-box">
+                        <input type="text" id="title" name="title" placeholder="title">
+                    </div>
+                    <div class="author-box">
+                        <input type="text" id="author" name="author" placeholder="author">
+                    </div>
+                    <div class="pages-box">
+                        <input type="number" min="1" max="1500" id="pages" name="pages" placeholder="pages">
+                    </div>
+                    <div class="radio-container">
+                        <label for="is-read" class="label">Have you read it?</label>
+                        <input type="checkbox" id="is-read" name="is-read">
+                    </div>
+                    <button type="submit" id="submit">submit</button>
+                </form>
+            </div>
+        </div>
+        
+
+        
+    </div>
+</body>
+</html>

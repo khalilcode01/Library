@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Merriweather+Sans:wght@300&family=Montserrat:wght@500&display=swap');
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+html, body, .container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    background-color: black;
+    height: 110px;
+    align-items: center;
+}
+.head-container {
+    width: 1200px;
+    font-size: 37px;
+    font-weight: 900;
+    color: red;
+    padding-left: 10px;
+}
+.head-container, .add-book, .grid-container {
+    margin: 0 auto;
+}
+.main {
+    background-color: red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.add-book {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+.grid-container {
+    display: grid;
+    height: 100%;
+    width: min(1178px, 90%);
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 9px;
+    
+}
+.size {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
+    
+}
+.title-card {
+    margin-top: 8px;
+}
+.card-button {
+    width: 247px;
+    height: 48px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+}
+.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+.open.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+.submit-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    border-radius: 5px;
+    width: 250px;
+    height: 330px;
+    max-width: 100%;
+    text-align: center;
+}
+.title-box, .author-box, .pages-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 54px;
+}
+input {
+    width: 200px;
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+}
+.head-card {
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+}
+#submit {
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+input:focus {
+    outline: none;
+}
+.radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#is-read {
+    width: 15px;
+}
