@@ -47,7 +47,7 @@ let btn = document.getElementById('submit');
 let formContainer = document.querySelector('.grid-container');
 
 btn.addEventListener('click', () => {
-  
+  event.preventDefault();
   title = document.getElementById('title').value;
   author = document.getElementById('author').value;
   pages = document.getElementById('pages').value;
